@@ -1,0 +1,424 @@
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject
+$ git config --global user.name "Vaishali"
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject
+$ git config --global user.email "vaishali_khatal@persistent.com"
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject
+$ git config user.name
+Vaishali
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=Vaishali
+user.email=vaishali_khatal@persistent.com
+core.editor=notepad
+merge.tool=meld
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject
+$ git init
+Initialized empty Git repository in D:/Learning and Training/Git/Project/CrawfordProject/.git/
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git add File1.txt
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File1.txt
+
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git commit -m "WI1:File1 created, welcome to git added"
+[master (root-commit) eaef58a] WI1:File1 created, welcome to git added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 File1.txt
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log
+commit eaef58ac4de1a3e9e78866c9eb26ad320d536ece (HEAD -> master)
+Author: Vaishali <vaishali_khatal@persistent.com>
+Date:   Fri Jun 3 11:53:24 2022 +0530
+
+    WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git commit -am "WI2:File1 created , change1 for WI2"
+[master 7d45b7c] WI2:File1 created , change1 for WI2
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log
+commit 7d45b7c7032f4eff67c4608c0e32301c6c26c14e (HEAD -> master)
+Author: Vaishali <vaishali_khatal@persistent.com>
+Date:   Fri Jun 3 12:00:11 2022 +0530
+
+    WI2:File1 created , change1 for WI2
+
+commit eaef58ac4de1a3e9e78866c9eb26ad320d536ece
+Author: Vaishali <vaishali_khatal@persistent.com>
+Date:   Fri Jun 3 11:53:24 2022 +0530
+
+    WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --oneline
+7d45b7c (HEAD -> master) WI2:File1 created , change1 for WI2
+eaef58a WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --help
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --help
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log -1
+commit 7d45b7c7032f4eff67c4608c0e32301c6c26c14e (HEAD -> master)
+Author: Vaishali <vaishali_khatal@persistent.com>
+Date:   Fri Jun 3 12:00:11 2022 +0530
+
+    WI2:File1 created , change1 for WI2
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --since="06/03/2022"
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --since="06/02/2022"
+commit 7d45b7c7032f4eff67c4608c0e32301c6c26c14e (HEAD -> master)
+Author: Vaishali <vaishali_khatal@persistent.com>
+Date:   Fri Jun 3 12:00:11 2022 +0530
+
+    WI2:File1 created , change1 for WI2
+
+commit eaef58ac4de1a3e9e78866c9eb26ad320d536ece
+Author: Vaishali <vaishali_khatal@persistent.com>
+Date:   Fri Jun 3 11:53:24 2022 +0530
+
+    WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --since="06/02/2022"  --oneline
+7d45b7c (HEAD -> master) WI2:File1 created , change1 for WI2
+eaef58a WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --grep="File1"
+commit 7d45b7c7032f4eff67c4608c0e32301c6c26c14e (HEAD -> master)
+Author: Vaishali <vaishali_khatal@persistent.com>
+Date:   Fri Jun 3 12:00:11 2022 +0530
+
+    WI2:File1 created , change1 for WI2
+
+commit eaef58ac4de1a3e9e78866c9eb26ad320d536ece
+Author: Vaishali <vaishali_khatal@persistent.com>
+Date:   Fri Jun 3 11:53:24 2022 +0530
+
+    WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --grep="WI2"
+commit 7d45b7c7032f4eff67c4608c0e32301c6c26c14e (HEAD -> master)
+Author: Vaishali <vaishali_khatal@persistent.com>
+Date:   Fri Jun 3 12:00:11 2022 +0530
+
+    WI2:File1 created , change1 for WI2
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git diff
+diff --git a/File1.txt b/File1.txt
+index 22f2c30..cb58846 100644
+--- a/File1.txt
++++ b/File1.txt
+@@ -1,3 +1,3 @@
+-Welcome to git session!
++Welcome to git  sesvddsion!
+
+-Change 1 : to chk second commit for WI2.
+\ No newline at end of file
++Change 1 : to chk sgdbsgsecond commit for WI2.
+\ No newline at end of file
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git add --help
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git restore File1.txt
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .class
+        .exe
+        .jar
+        New Text Document.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git add .
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git commit -m "config:gitignore created to skip class, exe, jar, bin dir, testdata"
+[master f65adab] config:gitignore created to skip class, exe, jar, bin dir, testdata
+ 1 file changed, 5 insertions(+)
+ create mode 100644 .gitignore
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Filetobedeleted.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git add .
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Filetobedeleted.txt
+
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git commit -m "WI3:Filetobedeleted created to check file evetns tracked by git"
+[master c28db47] WI3:Filetobedeleted created to check file evetns tracked by git
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Filetobedeleted.txt
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --oneline
+c28db47 (HEAD -> master) WI3:Filetobedeleted created to check file evetns tracked by git
+f65adab config:gitignore created to skip class, exe, jar, bin dir, testdata
+7d45b7c WI2:File1 created , change1 for WI2
+eaef58a WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Filetobedeleted.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git rm Filetobedeleted.txt
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Filetobedeleted.txt
+
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git commit -m "WI3:Filetobedeted has been removed due to sn "
+[master a35cb05] WI3:Filetobedeted has been removed due to sn
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 Filetobedeleted.txt
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --oneline
+a35cb05 (HEAD -> master) WI3:Filetobedeted has been removed due to sn
+c28db47 WI3:Filetobedeleted created to check file evetns tracked by git
+f65adab config:gitignore created to skip class, exe, jar, bin dir, testdata
+7d45b7c WI2:File1 created , change1 for WI2
+eaef58a WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git checkout 7d45b7c
+Note: switching to '7d45b7c'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 7d45b7c WI2:File1 created , change1 for WI2
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject ((7d45b7c...))
+$ git log --oneline
+7d45b7c (HEAD) WI2:File1 created , change1 for WI2
+eaef58a WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject ((7d45b7c...))
+$ git checkout master
+Previous HEAD position was 7d45b7c WI2:File1 created , change1 for WI2
+Switched to branch 'master'
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --oneline
+a35cb05 (HEAD -> master) WI3:Filetobedeted has been removed due to sn
+c28db47 WI3:Filetobedeleted created to check file evetns tracked by git
+f65adab config:gitignore created to skip class, exe, jar, bin dir, testdata
+7d45b7c WI2:File1 created , change1 for WI2
+eaef58a WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git revert a35cb05
+hint: Waiting for your editor to close the file... unix2dos: converting file D:/Learning and Training/Git/Project/CrawfordProject/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file D:/Learning and Training/Git/Project/CrawfordProject/.git/COMMIT_EDITMSG to Unix format...
+[master c59e192] Revert "WI3:Filetobedeted has been removed due to sn".
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Filetobedeleted.txt
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --oneline
+c59e192 (HEAD -> master) Revert "WI3:Filetobedeted has been removed due to sn".
+a35cb05 WI3:Filetobedeted has been removed due to sn
+c28db47 WI3:Filetobedeleted created to check file evetns tracked by git
+f65adab config:gitignore created to skip class, exe, jar, bin dir, testdata
+7d45b7c WI2:File1 created , change1 for WI2
+eaef58a WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git reset --help
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git reset --help
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git reset --hard a35cb05
+HEAD is now at a35cb05 WI3:Filetobedeted has been removed due to sn
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --oneline
+a35cb05 (HEAD -> master) WI3:Filetobedeted has been removed due to sn
+c28db47 WI3:Filetobedeleted created to check file evetns tracked by git
+f65adab config:gitignore created to skip class, exe, jar, bin dir, testdata
+7d45b7c WI2:File1 created , change1 for WI2
+eaef58a WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git reset --hard HEAD~2
+HEAD is now at f65adab config:gitignore created to skip class, exe, jar, bin dir, testdata
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$ git log --oneline
+f65adab (HEAD -> master) config:gitignore created to skip class, exe, jar, bin dir, testdata
+7d45b7c WI2:File1 created , change1 for WI2
+eaef58a WI1:File1 created, welcome to git added
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
+$
