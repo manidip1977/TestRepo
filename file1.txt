@@ -421,4 +421,6 @@ f65adab (HEAD -> master) config:gitignore created to skip class, exe, jar, bin d
 eaef58a WI1:File1 created, welcome to git added
 
 vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/CrawfordProject (master)
-$
+
+
+He shared his views on improving patient outcomes and transforming into a digitally enabled business ecosystem with data and AI. This is just one of the many videos, so be on the lookout for more such interesting insights.
